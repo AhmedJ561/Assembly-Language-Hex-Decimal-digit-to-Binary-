@@ -47,13 +47,13 @@ l4:
     lea dx, nl
     mov ah, 9h
     int 21h
-
-    mov bh, 0
+    
+    
     mov cx, 8
 
 l5:
-    shl bx, 1
-    rcr bh, 1
+    shl bl, 1
+ 
     jnc zero
     jc one
 
